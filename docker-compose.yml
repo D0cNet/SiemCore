@@ -1,0 +1,6 @@
+services:
+  siemcore:
+    image: ${DOCKER_REGISTRY-}siemcore
+    build:
+      context: .
+      dockerfile: SIEMCore\Dockerfile

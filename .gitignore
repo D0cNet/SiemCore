@@ -3,6 +3,13 @@
 ################################################################################
 
 /.vs
-/SiemAgent/obj
+
 /SiemAgent/bin/Debug/net8.0
 /SiemAgent/.vs/SiemAgent/v16
+SiemAgent/obj
+SiemAgent/bin
+SIEMCore/bin
+SIEMCore/obj
+Tests
+bin/
+obj/

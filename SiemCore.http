@@ -1,6 +1,0 @@
-@SiemCore_HostAddress = https://localhost:7216
-
-GET {{SiemCore_HostAddress}}/api/siem/dashboard/stats
-Accept: application/json
-
-###

@@ -1,9 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36105.17 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11111.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiemCore", "SiemCore.csproj", "{3B10A268-7656-2B11-D060-03F2ACC28D0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiemCore", "SIEMCore\SiemCore.csproj", "{3B10A268-7656-2B11-D060-03F2ACC28D0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiemAgent", "SiemAgent\SiemAgent.csproj", "{B5306A81-6A73-8C9C-5DFB-894BA35FDB96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiemCore.Tests", "Tests\SiemCore.Tests\SiemCore.Tests.csproj", "{5C283117-0221-07DD-9987-A904D11F0426}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Tests", "Tests\Integration.Tests\Integration.Tests.csproj", "{C585ED6B-1226-CA07-C7E3-A15B10395EA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiemAgent.Tests", "Tests\SiemAgent.Tests\SiemAgent.Tests.csproj", "{AB348008-E1DC-39F6-9A7B-C871C9193A28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{35F78761-D392-4954-B9D1-25EBD19D9BBF}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +27,34 @@ Global
 		{3B10A268-7656-2B11-D060-03F2ACC28D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B10A268-7656-2B11-D060-03F2ACC28D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B10A268-7656-2B11-D060-03F2ACC28D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5306A81-6A73-8C9C-5DFB-894BA35FDB96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5306A81-6A73-8C9C-5DFB-894BA35FDB96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5306A81-6A73-8C9C-5DFB-894BA35FDB96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5306A81-6A73-8C9C-5DFB-894BA35FDB96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C283117-0221-07DD-9987-A904D11F0426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C283117-0221-07DD-9987-A904D11F0426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C283117-0221-07DD-9987-A904D11F0426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C283117-0221-07DD-9987-A904D11F0426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C585ED6B-1226-CA07-C7E3-A15B10395EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C585ED6B-1226-CA07-C7E3-A15B10395EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C585ED6B-1226-CA07-C7E3-A15B10395EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C585ED6B-1226-CA07-C7E3-A15B10395EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB348008-E1DC-39F6-9A7B-C871C9193A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB348008-E1DC-39F6-9A7B-C871C9193A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB348008-E1DC-39F6-9A7B-C871C9193A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB348008-E1DC-39F6-9A7B-C871C9193A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C283117-0221-07DD-9987-A904D11F0426} = {35F78761-D392-4954-B9D1-25EBD19D9BBF}
+		{C585ED6B-1226-CA07-C7E3-A15B10395EA7} = {35F78761-D392-4954-B9D1-25EBD19D9BBF}
+		{AB348008-E1DC-39F6-9A7B-C871C9193A28} = {35F78761-D392-4954-B9D1-25EBD19D9BBF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB6121E2-790B-4EB0-A6F5-4769AF4A8DC5}
